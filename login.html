@@ -8,11 +8,66 @@
 </head>
 <body>
   <main role="main">
+    <header>
+      <h1>Login to Game Room</h1>
+      <h2>[Game room link here]</h2>
+    </header>
     <section>
-      <div class="card black">
-        <h2>Black Card</h2>
-        <p>Current Czar Name</p>
-      </div>
+      [message based on if game room is full]
+      <p>Game room is full...guess you're too slow. Well...if you can't join em'</p>
+      <a href="./create-room.html">Create your own game!</a>
+    </section>
+    <section>
+      [section for returning to game room]
+      <form id="create-room">
+        <div class="form-section">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username"/>
+        </div>
+        <div class="form-section">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password"/>
+        </div>
+        <a href="./game-room.html">Join Game</a>
+      </form>
+    </section>
+    <section>
+      [section for registering to the game room on first login]
+      <form id="login">
+        <div class="form-section">
+          <label for="uername">Username</label>
+          <input type="text" name="username" id="username"/>
+        </div>
+        <div class="form-section">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password"/>
+        </div>
+        <div class="form-section">
+          <label for="repeat-password">Repeat Password</label>
+          <input type="text" name="repeat-password" id="repeat-password"/>
+        </div>
+        <div class="form-section">
+          <label for="phone">US Phone Number</label>
+          <input type="tel" name="phone" id="phone" placeholder="888-888-8888"/>
+        </div>
+        <div class="form-section">
+          <label for="carrier">US Carrier</label>
+          <select name="carrier" id="carrier">
+            <option value="select">Choose your Carrier</option>
+            <option value="sms.alltelwireless.com">Alltel</option>
+            <option value=" txt.att.net">AT&T</option>
+            <option value="sms.myboostmobile.com">Boost Mobile</option>
+            <option value="txt.att.net">Cricket Wireless</option>
+            <option value="mymetropcs.com">MetroPCS</option>
+            <option value="msg.fi.google.com">ProjectFi</option>
+          </select>
+        </div>
+        <div class="form-section">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email"/>
+        </div>
+        <a href="./game-room.html">Join Game</a>
+      </form>
     </section>
   </main>
 </body>
